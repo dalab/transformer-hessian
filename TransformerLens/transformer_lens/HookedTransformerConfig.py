@@ -181,7 +181,8 @@ class HookedTransformerConfig:
         output_logits_soft_cap (float): An optional softcap for output logits, currently only used
             in Gemma-2 (see attn_scores_soft_cap for details). Defaults to -1.0, which means not
             set.
-        linear_attention
+        linear_attention (bool): Whether to disable the softmax in the attention mechanism.
+        residual_scaling (float): A scalar by which the residual connections inside the attention layers are scaled. 
 
     """
 
